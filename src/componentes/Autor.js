@@ -7,8 +7,15 @@ export default class AutorBox extends Component{
     render(){
         return(
             <div>
+            <div className="header">
+                <h1>Cadastro de Autores</h1>
+            </div>
+            <div className="content" id="content">
                 <FormularioAutor/>
-                <ListaAutor/>
+                <ListaAutor/>         
+            </div>
+            
+                
             </div>
         );
     };
