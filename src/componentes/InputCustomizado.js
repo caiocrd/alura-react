@@ -6,7 +6,7 @@ export default class InputCustomizado extends Component{
         super();
         this.state = {mensagemErro:""};
         PubSub.subscribe('erros', function(flag, erros){
-            
+            //console.log(erros);
             erros.responseJSON.errors.forEach(erro => {
                 if(erro.field === this.props.name){
                     this.setState({mensagemErro:erro.defaultMessage});
